@@ -1,0 +1,73 @@
+*{
+    margin: auto;
+    padding: 0%;
+}
+:root {
+    --bar-color: #5F1E56;
+    --fill-size: 0%;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    background-image: url("../img/fondo_princ.gif");
+    background-position: center center;
+}
+.barra-carga {
+    position: absolute;
+    width: 90%;
+    height: 3%;
+    background-color: white;
+    overflow: hidden;
+    margin-bottom: 4%;
+    border: 5px solid;
+    border-color: black;
+    border-radius: 0%;
+}
+.redi {
+    margin-bottom: 7%;
+    font-size: 40px;
+    font-family:Arial, Helvetica, sans-serif;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: 0.7s 0.1s;
+    color: rgb(255, 255, 255);
+    
+}
+
+
+.barra-carga::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--bar-color);
+    transform: translateX(-100%);
+    animation: fill-carga 0.8s 0.3s ease-in-out forwards;
+    align-items: center;
+}
+
+@keyframes fill-carga {
+    to { 
+        transform: translateX(var(--fill-size));
+    }
+}
+    
+
+.redi{
+    opacity: 0;
+}
+.carga {
+    background-color: aliceblue;
+    width: 45%;
+}
+.juan{
+    opacity: 1;
+}
+.barrita{
+    opacity: 0;
+}

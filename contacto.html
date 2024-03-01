@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/estilos_barra.css?ver=7.1">
+  <link rel="stylesheet" type="text/css" href="css/estcon.css?ver=7.0">
+  <title>Contacto</title>
+  <script>
+    function setActivePage(currentPageId) {
+        var menuItems = document.querySelectorAll('.menu-item');
+        menuItems.forEach(function(item) {
+            if (item.id === currentPageId) {
+                item.classList.add('active');
+            } else {
+                item.classList.remove('active');
+            }
+        });
+    }
+</script>
+</head>
+
+<body>
+
+  <div class="container">
+    <main class="contenido">
+        <img class="contacto-img" src="./img/contacto/email.png" alt="contacto-email">
+        <div class="rd1">
+          brayanestivengodoy15@gmail.com
+        </div>
+        <img class="contacto-img" src="./img/contacto/instagram.png" alt="contacto-instagram">
+        <div class="rd2">
+          @BrayanWebK
+        </div>
+        <img class="contacto-img" src="./img/contacto/facebook.png" alt="contacto-facebook">
+        <div class="rd3">
+          BrayanWebK
+        </div>
+        <img class="contacto-img" src="./img/contacto/github.png" alt="contacto-github">
+        <div class="rd4">
+          brayan098
+        </div>
+        <img class="contacto-img" src="./img/contacto/whatsapp.png" alt="contacto-whatsapp">
+      <div class="rd5">
+        +57 302 767 8141
+      </div>
+  </div>
+  </main>
+  <nav class="menu_barra">
+    <div class="txt1">
+      <a href="inicio.html" class="menu-item active" id="inicio">
+        <img src="./img/icono_inicio.png" alt="Icono" class="icono">
+        <span class="texto1"><p>Inicio</p></span>
+      </a>
+    </div>
+   <div class="txt2">
+    <a href="proyectos.html" class="menu-item active" id="proyectos">
+      <img src="./img/icono_proyectos.png" alt="Icono" class="icono">
+      <span class="texto2"><p>Proyectos</p></span>
+    </a>
+   </div>
+    <div class="txt3">
+      <a href="perfil.html" class="menu-item active" id="perfil">
+        <img src="./img/icono_perfil.png" alt="Icono" class="icono">
+        <span class="texto3"><p>Perfil</p></span>
+      </a>
+    </div>
+    <div class="txt4">
+      <a href="contacto.html" class="menu-item active" id="contacto">
+        <img src="./img/icono_contacto.png" alt="Icono" class="icono">
+        <span class="texto4"><p>Contacto</p></span>
+      </a>
+    </div>
+  </nav>
+  <script>
+    setActivePage("contacto"); 
+</script>
+</body>
+
+</html>

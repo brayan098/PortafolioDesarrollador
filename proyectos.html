@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/estilos_barra.css?ver=6.0">
+  <link rel="stylesheet" type="text/css" href="css/estproy.css?ver=6.0">
+  <title>Proyectos</title>
+  <script>
+    function setActivePage(currentPageId) {
+      var menuItems = document.querySelectorAll('.menu-item');
+      menuItems.forEach(function (item) {
+        if (item.id === currentPageId) {
+          item.classList.add('active');
+        } else {
+          item.classList.remove('active');
+        }
+      });
+    }
+  </script>
+</head>
+
+<body>
+  <section>
+      <div class="card">
+        <div class="face front">
+          <img src="./img/planetas/luna.png">
+          <h3>Proyecto 1</h3>
+        </div>
+        <div class="face back">
+          <h3>Proyecto 1</h3>
+          <p>En este proyecto</p>
+          <div class="link">
+            <a href="proyecto1.html">Ver</a>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="face front">
+          <img src="./img/planetas/tierra.png">
+          <h3>Proyecto 2</h3>
+        </div>
+        <div class="face back">
+          <h3>Proyecto 2</h3>
+          <p>En este proyecto</p>
+          <div class="link">
+            <a href="proyecto2.html">Ver</a>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="face front">
+          <img src="./img/planetas/jupiter.png">
+          <h3>Proyecto 3</h3>
+        </div>
+        <div class="face back">
+          <h3>Proyecto 3</h3>
+          <p>En este proyecto</p>
+          <div class="link">
+            <a href="proyecto3.html">Ver</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <nav class="menu_barra">
+      <div class="txt1">
+        <a href="inicio.html" class="menu-item active" id="inicio">
+          <img src="./img/icono_inicio.png" alt="Icono" class="icono">
+          <span class="texto1"><p>Inicio</p></span>
+        </a>
+      </div>
+     <div class="txt2">
+      <a href="proyectos.html" class="menu-item active" id="proyectos">
+        <img src="./img/icono_proyectos.png" alt="Icono" class="icono">
+        <span class="texto2"><p>Proyectos</p></span>
+      </a>
+     </div>
+      <div class="txt3">
+        <a href="perfil.html" class="menu-item active" id="perfil">
+          <img src="./img/icono_perfil.png" alt="Icono" class="icono">
+          <span class="texto3"><p>Perfil</p></span>
+        </a>
+      </div>
+      <div class="txt4">
+        <a href="contacto.html" class="menu-item active" id="contacto">
+          <img src="./img/icono_contacto.png" alt="Icono" class="icono">
+          <span class="texto4"><p>Contacto</p></span>
+        </a>
+      </div>
+    </nav>  
+  <script>
+    setActivePage("proyectos"); 
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(../img/fondo_princ.gif);
+    width: 100%;
+    height: 100vh;
+    
+}
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-30%, -50%);
+    text-align: center;
+}
+
+.contenido {
+    background-color: rgba(255, 255, 255, 0); 
+    padding: 10px;
+    border-radius: 10px;
+}
+.contacto-img{
+    width: 15%;
+    height: 15%;
+    display: flex;
+    padding: 2%;
+}
+.contacto-text{
+    margin-bottom: 7%;
+    font-family: "Comic Sans MS";
+    color: white;
+    font-size: 90%;
+    text-align: left;
+}
+.rd1{
+    position: absolute;
+    font-family: "Comic Sans MS";
+    color: white;
+    font-size: 120%;
+    top: 9.5%;
+    left: 28%;
+}
+.rd2{
+    position: absolute;
+    font-family: "Comic Sans MS";
+    color: white;
+    font-size: 120%;
+    top: 28%;
+    left: 28%;
+}
+.rd3{
+    position: absolute;
+    font-family: "Comic Sans MS";
+    color: white;
+    font-size: 120%;
+    left: 28%;
+    top: 47%;
+}
+.rd4{
+    position: absolute;
+    font-family: "Comic Sans MS";
+    color: white;
+    font-size: 120%;
+    left: 28%;
+    top: 66%;
+}
+.rd5{
+    position: absolute;
+    font-family: "Comic Sans MS";
+    color: white; 
+    font-size: 120%;
+    left: 28%;
+    top: 86%;
+}
+
